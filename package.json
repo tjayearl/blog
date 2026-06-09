@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix blog-ui run dev",
+    "build": "npm --prefix blog-ui run build",
+    "lint": "npm --prefix blog-ui run lint",
+    "preview": "npm --prefix blog-ui run preview"
+  }
+}

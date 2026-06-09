@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { BrowserRouter, Navigate, NavLink, Outlet, Route, Routes, useNavigate, useParams } from 'react-router-dom'
+import { HashRouter, Navigate, NavLink, Outlet, Route, Routes, useNavigate, useParams } from 'react-router-dom'
 import { BookText, Edit3, LogOut, Plus, Search, Shapes, Trash2 } from 'lucide-react'
 import './App.css'
 import { AuthProvider, useAuth } from './context/AuthContext.jsx'
@@ -8,7 +8,7 @@ import { api } from './lib/api.js'
 function App() {
   return (
     <AuthProvider>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route element={<ShellLayout />}>
             <Route path="/" element={<HomePage />} />
@@ -65,7 +65,7 @@ function App() {
             />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </AuthProvider>
   )
 }
