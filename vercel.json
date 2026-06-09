@@ -1,4 +1,3 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "blog-ui/dist"
+  "outputDirectory": "dist"
 }
