@@ -1,9 +1,12 @@
 {
   "private": true,
+  "workspaces": [
+    "blog-ui"
+  ],
   "scripts": {
-    "dev": "npm --prefix blog-ui run dev",
-    "build": "npm --prefix blog-ui run build",
-    "lint": "npm --prefix blog-ui run lint",
-    "preview": "npm --prefix blog-ui run preview"
+    "dev": "npm run dev -w blog-ui",
+    "build": "npm run build -w blog-ui",
+    "lint": "npm run lint -w blog-ui",
+    "preview": "npm run preview -w blog-ui"
   }
 }
